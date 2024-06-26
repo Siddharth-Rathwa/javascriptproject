@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    background-color: #f1faee;
+    display: flex;
+    height: 100vh;
+}
+.cal-container{
+    background-color: #ced4da;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+}
+.display{
+    background-color: #ced4da;
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.btn{
+    background-color: #6c757d;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    padding: 20px;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+}
+.btn:active{
+    background-color: #343a40;
+    color: white;
+}
+.btn:nth-child(4n){
+    background-color: #a7c957;
+}
+.btn:nth-child(4n):active{
+    background-color:#606c38;
+}
+.btn.btn:nth-child(1){
+    background-color: #a7c957;
+}
+.btn.btn:nth-child(2){
+    background-color: #a7c957;
+}
+.btn.btn:nth-child(3){
+    background-color: #a7c957;
+}
+.btn:nth-child(1):active{
+    background-color:#606c38;
+}
+.btn:nth-child(2):active{
+    background-color:#606c38;
+}
+.btn:nth-child(3):active{
+    background-color:#606c38;
+}
