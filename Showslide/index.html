@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slide-container">
+        <div class="myslide fade">
+            <div class="slide-num">1/5</div>
+            <img src="./slideimages/Evening.avif" alt="" style="width: 100%; height: fit-content;">
+            <div class="cap-text">caption one</div>
+        </div>
+        <div class="myslide fade">
+            <div class="slide-num">2/5</div>
+            <img src="./slideimages/Mountains.avif" alt="" style="width: 100%; height: fit-content;">
+            <div class="cap-text">caption two</div>
+        </div>
+        <div class="myslide fade">
+            <div class="slide-num">3/5</div>
+            <img src="./slideimages/Mcacw parrot.jpg" alt="" style="width: 100%; height: fit-content;">
+            <div class="cap-text">caption three</div>
+        </div>
+        <div class="myslide fade">
+            <div class="slide-num">4/5</div>
+            <img src="./slideimages/Trees.jpg" alt="" style="width: 100%; height: fit-content;">
+            <div class="cap-text">caption four</div>
+        </div>
+        <div class="myslide fade">
+            <div class="slide-num">5/5</div>
+            <img src="./slideimages/Tiger.jpg" alt="" style="width: 100%; height: fit-content;">
+            <div class="cap-text">caption five</div>
+        </div>
+        <a class="prev" onclick="plauside(-1)"><</a>
+        <a class="next" onclick="plauside(1)">></a>
+    </div>
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentslide(1)"></span>
+        <span class="dot" onclick="currentslide(2)"></span>
+        <span class="dot" onclick="currentslide(3)"></span>
+        <span class="dot" onclick="currentslide(4)"></span>
+        <span class="dot" onclick="currentslide(5)"></span>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
