@@ -26,4 +26,3 @@ function calculateResult(){
         display.innerText="Error";
     }
 }
-jjj

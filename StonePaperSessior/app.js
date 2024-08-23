@@ -6,6 +6,7 @@ let msg = document.querySelector("#msg");
 
 let userScorePara=document.querySelector("#user-score");
 let compScorePara=document.querySelector("#comp-score");
+let rstBtn=document.querySelector(".rstBtn");
 
 // computer choice 
 const gencompchice = () => {
@@ -17,19 +18,26 @@ const drawgame = () => {
     console.log("match was draw");
     msg.innerText = "Game was draw play again!";
 }
+rstBtn.addEventListener("click",()=>{
+    userscore="0";
+    compscore="0";
+    userScorePara.innerText=userscore;
+    compScorePara.innerText=compscore;
+    msg.innerText="play you move";
+})
 // show winner
 const showWinner=(userwin, userchoice, compchoice)=>{
     if(userwin){
         userscore++;
         userScorePara.innerText=userscore;
         msg.innerText=`you win your ${userchoice} beats ${compchoice}`;
-        // msg.style.backgroundColor="#474A2C"
+        msg.style.backgroundColor="#474A2C"
     }
     else{
         compscore++;
         compScorePara.innerText=compscore;
         msg.innerText=`you lost ${compchoice} beats your ${userchoice}`;
-        // msg.style.backgroundColor="#474A2C";
+        msg.style.backgroundColor="#474A2C";
     }
 
 }
